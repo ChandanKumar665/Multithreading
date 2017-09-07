@@ -1,10 +1,11 @@
+package com.github.chandan665.multithreading
 class ChildThread extends Thread { 
 static Thread mt;
-public void run(){
-	try{
+public void run() {
+	try {
 		mt.join();
 	}
-	catch(InterruptedException e){
+	catch(InterruptedException e) {
 		System.out.println(e.getMessage());
 	}
 	for(int i=0;i<=3;i++) {
