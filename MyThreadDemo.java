@@ -6,7 +6,7 @@ class MyThread extends Thread{
 		Thread.currentThread().setPriority(1);
 		System.out.println("new priority is: "+Thread.currentThread().getPriority());
 		for (int i=0;i<3;i++){
-			System.out.println("child thread");
+			System.out.println("i am child thread");
 		}
 	}	
 }
